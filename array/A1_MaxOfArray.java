@@ -14,7 +14,7 @@ public class A1_MaxOfArray {
         }
 
        System.out.println(maxInt(arr)); 
-        
+       sc.close();
 
     }
     public static int maxInt(int arr[]){

@@ -19,7 +19,7 @@ public class A1_TwoSumBrute {
 
         boolean ans = twoSum(arr, k);
         System.out.println(ans);
-        
+        sc.close();
     }
 
     public static boolean twoSum(int arr[],int k){

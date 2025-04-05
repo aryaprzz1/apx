@@ -17,6 +17,7 @@ public class A3_2dPrintColumnWise {
             }
         }
         printtC2d( ar);
+        sc.close();
             
         
     }

@@ -16,6 +16,7 @@ public class A3_2dPrintZigZag {
         }
 
         zigZag(arr);
+        sc.close();
     }
 
     public static void zigZag(int arr[][]){

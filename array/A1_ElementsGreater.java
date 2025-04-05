@@ -13,7 +13,7 @@ public class A1_ElementsGreater {
         }
         int c =  countgreater(arr);
         System.out.println(c);
-
+        sc.close();
 
     }
     public static int countgreater( int arr[]){
