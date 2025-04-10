@@ -1,6 +1,6 @@
 package apx.array;
 
-import java.util.Arrays;
+//import java.util.Arrays;
 
 public class A4_NextGreater3 {
     public int nextGreaterElement(int n){

@@ -17,6 +17,7 @@ public class A2_PrefixSum {
         for (int i : arr) {
             System.out.println(i + " ");
         }
+        sc.close();
 
 
     }
