@@ -2,7 +2,7 @@ package apx.sorting;
 
 import java.util.Scanner;
 
-public class S1_BubbleSort {
+public class L1_BubbleSort {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -19,29 +19,27 @@ public class S1_BubbleSort {
             System.out.print(arr[i] + " ");
         }
 
-
     }
 
-    public static int [] bubbleSort(int arr[]){
-        int n = arr.length ;
-
-        for(int i = 0 ; i< n -1 ; i++){
-            for(int j = 0 ; j<n-1 -i ; j++){
-                if(arr[j] >= arr[j+1]){
-                    swap(arr, j, j+1);
+    public static void bubbleSort(int arr[]){
+        for(int i = 0 ; i<= arr.length -2 ; i++){
+            for( int j = 0 ; j<= arr.length-2 - i ; j++){
+                if(arr[j] > arr[j+1]){
+                    swap(j ,j+1,arr);
                 }
             }
         }
-        return arr ;  
-     }
-     public static void swap(int swapArr[], int j , int j1){
-        
+    }
 
-        int temp = swapArr[j];
-        swapArr[j] = swapArr[j1];
-        swapArr[j1] = temp ;
-     }
+    public static void swap(int i , int j ,int arr[]){
+        int t = arr[i];
+        arr[i] = arr[j] ;
+        arr[j] = t ;
+        
+    }
 }
+// Sorting_Bubble Sort
+// Success rate: 30.05%
 // Given N array Integers, Sort the array using Bubble sort technique
 
 // Input Format:
