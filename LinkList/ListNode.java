@@ -125,7 +125,5 @@ public class ListNode{
 
     }
 
-    public ListNode deleteAtNode(){
-        
-    }
+  
 }

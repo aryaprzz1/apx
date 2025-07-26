@@ -26,6 +26,7 @@ public class L1_ModifiedDeletion {
         Node h = BuildList(linkSize);
         todelete(h, x) ;
         printList(h);
+        sc.close();
        
     }  
     

@@ -2,7 +2,7 @@ package apx.sorting;
 
 import java.util.Arrays;
 import java.util.Scanner;
-import java.util.Collections;
+
 public class L1_OrderOfRemoval {
 
     public static void main (String [] args){
@@ -17,7 +17,7 @@ public class L1_OrderOfRemoval {
         }
         int ans = Order(arr) ;
 
-        System.out.println(ans);
+        System.out.println(ans);sc.close();
     }
     public static int Order(Integer arr[] ){
         int mcost = 0 ;

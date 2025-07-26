@@ -13,6 +13,7 @@ public class L1_GoodIntegerDuplicates {
             arr[i] = sc.nextInt() ;
         }
         System.out.println(goodIntDup(arr));
+        sc.close();
     }
 
     public static int goodIntDup(int arr[]){

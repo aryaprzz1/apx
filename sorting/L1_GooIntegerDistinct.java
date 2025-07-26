@@ -15,7 +15,7 @@ public class L1_GooIntegerDistinct {
         }
         int ans = goodIntDist(arr) ;
 
-        System.out.println(ans);
+        System.out.println(ans);sc.close();
         }
         public static int goodIntDist(int arr[]){
         Arrays.sort(arr);

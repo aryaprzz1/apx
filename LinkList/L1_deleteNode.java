@@ -28,6 +28,7 @@ public class L1_deleteNode {
         Node head = BuildList(linkSize);
         head = deleteXthNode(x,head);
         printList(head);
+        sc.close();
     }    
 
     static Node deleteXthNode(int x, Node h){
