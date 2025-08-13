@@ -1,10 +1,11 @@
 package apx.sorting;
 
+import java.util.Random;
 import java.util.Scanner ;
 
-public class L2_QuickSort {
+public class L3_QuickSort {
 
-
+    static Random m = new Random();
     public static void quickSort(int arr[], int s , int e ){
         if( s >=e){return ;}
         int p = rearrange(arr, s, e);
@@ -13,6 +14,9 @@ public class L2_QuickSort {
     }   
 
     public static int rearrange(int arr[], int s , int e){
+        int r = m.nextInt(s,e) ;
+        swap(arr,r,s) ;
+
         int p1 = s+1 ;
         int p2 = e ;
 
@@ -35,6 +39,7 @@ public class L2_QuickSort {
         arr[b] =t ;
 
     }
+  
     public static void main (String args []){
         Scanner sc = new Scanner(System.in) ;
 
