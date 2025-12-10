@@ -28,6 +28,24 @@ public class b1_SingleNumber {
         return u ;
 
     }
+
+    public static int nestedSingleNumber(int arr[]){// 6 8 8 7 7 10 6
+
+        for(int i = 0 ; i< arr.length ; i++){
+             boolean flag = false ;
+            for(int j = 0 ; j< arr.length ; j++){
+    
+                if( i != j && arr[i] == arr[j]){
+                    flag = true ;
+                    break ;
+                }
+            }
+              if(flag == false){
+                    return arr[i] ;
+                }
+        }
+        return -1 ;
+    }
 }
 
 // You are given a non-empty array of integers, nums, where every element appears exactly twice except for one unique element that appears only once. Your task is to find and return the unique element.
