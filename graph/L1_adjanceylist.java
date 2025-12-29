@@ -4,47 +4,63 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class L1_adjanceylist {
-    public  List<List<Integer>> adjanceyList(int n, int m,int g[][]){
+    
+    public List<List<Integer>> ConstAdjList(int nodes, int edges , int edge[][]){
+        int n  = nodes ;
+        int m = edges ;
 
-        List<List<Integer>> graph = new ArrayList<>();
-       // int n = graph.size() ;
-        for( int i = 0 ; i < n; i++){
-            graph.add(new ArrayList<>()) ;
-        }   
+        List<List<Integer>> graphlist = new ArrayList<>() ;
 
-        for( int i = 0 ; i< m ; i++){
-            int u = g[i][0];
-            int v = g[i][1] ;
-           // int wt = g[i][2] ;
-
-            graph.get(u).add(v);
-            graph.get(v).add(u);
-
+        for( int i = 0  ; i< n ; i++){
+            graphlist.add(new ArrayList<>()) ;
         }
 
-        return graph;
+        for( int i = 0 ; i<edge.length ;i++){
+            int u = edge[i][0] ;
+            int v = edge[i][1] ;
+
+            graphlist.get(u).add(v);
+            graphlist.get(v).add(u) ;
+        }
+
+        return graphlist ;
 
     }
 
-    public  List<List<graphPair>> adjanceyListweight(int n, int m,int g[][]){
+    public List<List<graph>> ConstAdjListWeight(int node, int edge , int edges[][]){
+        int n = node ;
+        int m = edges.length ;
 
-        List<List<graphPair>> graph = new ArrayList<>();
-       // int n = graph.size() ;
-        for( int i = 0 ; i < n; i++){
-            graph.add(new ArrayList<>()) ;
-        }   
+        List<List<graph>> graphlist = new ArrayList<>() ;
 
-        for( int i = 0 ; i< m ; i++){
-            int u = g[i][0];
-            int v = g[i][1] ;
-            int wt = g[i][2] ;
-
-            graph.get(u).add(new graphPair(v, u, wt));
-            graph.get(v).add(new graphPair(v,u,wt));
-
+        for(int i = 0 ; i< n; i++){
+            graphlist.add(new ArrayList<>());
         }
 
-        return graph;
+        for( int  i = 0 ; i < m ;i++){
+            int u = edges[i][0] ;
+            int v =  edges[i][1] ;
+            int wt = edges[i][2] ;
+            
+            graphlist.get(u).add(new graph(v,wt));
+            graphlist.get(v).add(new graph(u,wt));
+        }
 
+        return graphlist ;
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 }

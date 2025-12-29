@@ -1,5 +1,4 @@
-package apx.Recursion;
-
+package apx.dp.Recursion;
 import java.util.Scanner;
 
 public class R1_PowerXN {
